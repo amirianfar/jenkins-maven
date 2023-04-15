@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Clone and Compile'){
             steps {
-            sh "mvn clean complie"
+            sh "mvn clean compile"
                 
             }
         } 
