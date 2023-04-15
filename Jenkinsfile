@@ -24,5 +24,12 @@ pipeline {
                 sh 'mvn package'
             }
         }
+       stage ('Archive'){
+           stage {
+           echo 'Archiving ...'
+	   archiveArtifacts '**/target/*.jar'	
+             }
+       }
+
     }
 }
