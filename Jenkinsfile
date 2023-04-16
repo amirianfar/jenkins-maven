@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Clone and Compile'){
             steps {
-	    sh "print env"
+	    sh "echo this is feature branch"
             sh "mvn clean compile"
                 
             }
