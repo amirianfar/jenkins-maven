@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage ('Clone and Compile'){
             steps {
+	    sh "echo this is for main branc"
             sh "mvn clean compile"
                 
             }
