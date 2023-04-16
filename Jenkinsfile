@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Clone and Compile'){
             steps {
-	    sh "pring env"
+	    sh "print env"
             sh "mvn clean compile"
                 
             }
